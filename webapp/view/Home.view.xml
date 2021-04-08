@@ -1,0 +1,17 @@
+<mvc:View controllerName="com.practice.SampleCoreElement.controller.Home" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	<Shell id="shell">
+		<App id="home">
+			<pages>
+				<Page id="page" title="Home">
+					<content>
+						<TileContainer id="container" tileDelete="handleTileDelete" tiles="{optionForUsers>/TileCollection}">
+							<StandardTile icon="{optionForUsers>icon}" type="{optionForUsers>type}" number="{optionForUsers>number}"
+								numberUnit="{optionForUsers>numberUnit}" title="{optionForUsers>title}" info="{optionForUsers>info}" infoState="{optionForUsers>infoState}"
+								press="onGotoDetail"/>
+						</TileContainer>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
