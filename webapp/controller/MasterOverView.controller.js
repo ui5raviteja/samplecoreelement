@@ -13,7 +13,6 @@ sap.ui.define([
 		onInit: function () {
 
 		}
-
 		/**
 		 * Similar to onAfterRendering, but this hook is invoked before the controller's View is re-rendered
 		 * (NOT before the first rendering! onInit() is used for that one!).
